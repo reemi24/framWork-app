@@ -1,0 +1,19 @@
+<section class="d-flex py-5 flex-column justify-content-center align-items-center">
+    <app-star [titleStar]="titleContact" [customColor]="colorContact"></app-star>
+
+    <form class="widthContact mx-auto py-3">
+        <label for="userName" class="text-sec my-2 fw-semibold position-relative top-0" [class.top-40]="!userName.length">UserName :</label>
+        <input type="text" placeholder="userName" name="userName" id="userName" [(ngModel)]="userName" class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2">
+
+        <label for="userAge" class="text-sec my-2 fw-semibold position-relative top-0" [class.top-40]="!userAge">UserAge :</label>
+        <input type="number" placeholder="userAge" name="userAge" id="userAge" [(ngModel)]="userAge" class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2">
+
+        <label for="userEmail" class="text-sec my-2 fw-semibold position-relative top-0" [class.top-40]="!userEmail.length">UserEmail :</label>
+        <input type="email" placeholder="userEmail" name="userEmail" id="userEmail" [(ngModel)]="userEmail" class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2">
+
+        <label for="userPassword" class="text-sec my-2 fw-semibold position-relative top-0" [class.top-40]="!userPassword.length">UserPassword :</label>
+        <input type="password" placeholder="userPassword" name="userPassword" id="userPassword" [(ngModel)]="userPassword" class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2">
+
+        <button class="btn-main mt-3">Send Message</button>
+    </form>
+</section>
